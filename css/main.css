@@ -1,0 +1,220 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.portfolio__title-1, .contacts__title-1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+/* Header */
+
+.header{
+  padding-top: 46px;
+  background-color: #f1f1f1;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 76px;
+}
+
+.header__logo {
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  padding: 0 12px 3px 0;
+  line-height: 1;
+}
+
+.header__logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: #FDA300;
+  border-radius: 50%;
+
+}
+
+/* Nav */
+
+.menu__list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.menu__button {
+  display: none;
+}
+
+.menu__link {
+  color: #000;
+}
+
+.menu__link.menu__link_active {
+  color: #606060;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header__content {
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+.header__heading {
+  font-size: 44px;
+  line-height: 66px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.header__content p{
+  line-height: 2;
+}
+
+/* Services */
+
+.services {
+  padding: 90px 0;
+
+}
+
+.services__row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.services__card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+
+.services__card-image {
+  margin-bottom: 30px;
+}
+.services__card-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.services__card p{
+  line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 90px 0;
+  background-color: #f1f1f1;
+}
+
+.portfolio__title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.portfolio__project {
+  text-align: center;
+}
+
+.portfolio__project + .portfolio__project {
+  margin-top: 90px;
+}
+
+.portfolio__project-image {
+  margin-bottom: 40px;
+}
+
+.portfolio__project-title {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.portfolio__project-title a{
+  color: #000;
+}
+
+/* Contacts */
+
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+}
+
+.contacts__content {
+  max-width: 480px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+.contacts__content p + p{
+  margin-top: 1em;
+}
+
+.contacts__button-container {
+  margin-bottom: 80px;
+}
+.contacts__button {
+  display: inline-block;
+  padding: 7px 22px;
+  background-color: #070707;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #fff;
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.contacts__button:hover, .contacts__button:focus {
+  background-color: #323232;
+}
+
+.contacts__button:active {
+  background-color: #000000;
+  position: relative;
+  top: 1px;
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contacts__footer {
+  color: #828282;
+  ;
+}
